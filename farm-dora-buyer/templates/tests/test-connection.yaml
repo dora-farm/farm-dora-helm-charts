@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "farm-dora-buyer.fullname" . }}-test-connection"
+  labels:
+    {{- include "farm-dora-buyer.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "farm-dora-buyer.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

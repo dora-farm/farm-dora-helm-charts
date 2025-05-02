@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: chakisuk/farm-dora-client
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: latest
 
 imagePullSecrets: []

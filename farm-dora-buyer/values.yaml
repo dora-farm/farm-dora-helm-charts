@@ -7,7 +7,7 @@ image:
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: "farm-dora-buyer"
+fullnameOverride: ""
 
 serviceAccount:
   create: true
@@ -44,7 +44,7 @@ resources:
   requests:
     cpu: 300m
     memory: 512Mi
-    
+
 livenessProbe:
   httpGet:
     path: /actuator/health

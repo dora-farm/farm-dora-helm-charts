@@ -31,7 +31,7 @@ ingress:
   className: ""
   annotations: {}
   hosts:
-#    - host: farmdora.kro.kr
+#    - host: farm-dora.kro.kr
       paths:
         - path: /
           pathType: ImplementationSpecific

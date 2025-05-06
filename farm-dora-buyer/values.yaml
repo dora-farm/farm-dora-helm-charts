@@ -7,7 +7,7 @@ image:
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "farm-dora-buyer"
 
 serviceAccount:
   create: true

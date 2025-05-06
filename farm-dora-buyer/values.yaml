@@ -39,12 +39,12 @@ ingress:
 
 resources:
   limits:
-    cpu: 500m
-    memory: 512Mi
+    cpu: 1000m
+    memory: 1024Mi
   requests:
-    cpu: 200m
-    memory: 256Mi
-
+    cpu: 300m
+    memory: 512Mi
+    
 livenessProbe:
   httpGet:
     path: /actuator/health

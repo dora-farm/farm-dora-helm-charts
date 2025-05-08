@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: chakisuk/farm-dora-client
   pullPolicy: Always
-  tag: "65"
+  tag: "66"
 
 imagePullSecrets: []
 nameOverride: ""

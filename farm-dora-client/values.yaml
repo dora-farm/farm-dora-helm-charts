@@ -29,13 +29,11 @@ service:
 ingress:
   enabled: false
   className: ""
-  annotations: {}
   hosts:
 #    - host: farm-dora.kro.kr
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls: []
 
 resources:
   limits:
@@ -60,12 +58,5 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
-
-volumes: []
-volumeMounts: []
-
-nodeSelector: {}
-tolerations: []
-affinity: {}
 
 environment: dev

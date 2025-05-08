@@ -7,8 +7,6 @@ metadata:
     chart: {{ include "farm-dora-client.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
-  annotations:
-    image-tag: "{{ .Values.image.tag }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
@@ -19,6 +17,8 @@ spec:
       labels:
         app: {{ include "farm-dora-client.name" . }}
         release: {{ .Release.Name }}
+      annotations:
+        image-tag: "{{ .Values.image.tag }}"
     spec:
       serviceAccountName: {{ include "farm-dora-client.serviceAccountName" . }}
       containers:

@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: chakisuk/farm-dora-product
   pullPolicy: Always
-  tag: latest
+  tag: 11
 
 imagePullSecrets: []
 nameOverride: ""

@@ -4,7 +4,7 @@ revisionHistoryLimit: 2
 image:
   repository: chakisuk/farm-dora-auth
   pullPolicy: Always
-  tag: 18
+  tag: 19
 
 imagePullSecrets: []
 nameOverride: ""

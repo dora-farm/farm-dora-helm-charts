@@ -1,5 +1,5 @@
 replicaCount: 1
-revisionHistoryLimit: 3
+revisionHistoryLimit: 2
 
 image:
   repository: chakisuk/farm-dora-product
